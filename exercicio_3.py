@@ -17,3 +17,15 @@ Digite um número:
 
 Dica: Lembre do comando de resto da divisão inteira!
 """
+
+try:
+
+    num = int(input("Insira um número inteiro:"))
+
+    if num % 2 == 0:
+        print(f"O número {num} é um número par.")
+    else:
+        print(f"O número {num} é um número impar.")
+
+except ValueError:
+    print("O número inserido não é um número inteiro.")
